@@ -8,7 +8,7 @@ const progressContainer = document.getElementById("progress-container");
 const title = document.getElementById("title");
 const cover = document.getElementById("cover");
 // Songs Titles
-const songs = ["On & On", "jazzyfrenchy", "ukulele", "COVER-Music"];
+const songs = ["On & On", "Invincible", "Spectre and Fade", "hymn for the weekend", "Fight Back"];
 // KeepTrack of song
 let songIndex = 0;
 // Initially load song details into DOM
@@ -16,8 +16,8 @@ loadSong(songs[songIndex]);
 // Update song details
 function loadSong(song) {
     title.innerText = song;
-    audio.src = `${song}.webm`;
-    cover.src = `${song}.png`;
+    audio.src = `./music/${song}.webm`;
+    cover.src = `./images/${song}.jpg`;
 }
 // Play Song
 function playSong() {
